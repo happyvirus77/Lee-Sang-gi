@@ -1,0 +1,230 @@
+export const navItems = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'process', label: 'Process' },
+  { id: 'ai', label: 'AI' },
+  { id: 'insights', label: 'Insights' },
+  { id: 'contact', label: 'Contact' },
+];
+
+export const aboutCards = [
+  {
+    title: 'Product Thinking',
+    label: '업무 스타일',
+    text: '사용자 문제와 비즈니스 목표를 먼저 정리한 뒤, 빠른 프로토타입으로 방향을 검증합니다.',
+  },
+  {
+    title: 'Problem Framing',
+    label: '문제 해결',
+    text: '기능을 늘리기보다 사용자가 막히는 지점을 찾아 정보 구조와 인터랙션을 개선합니다.',
+  },
+  {
+    title: 'Team Sync',
+    label: '협업 방식',
+    text: '기획, 디자인, 개발, 마케팅 언어를 연결해 팀이 같은 방향으로 움직이게 만듭니다.',
+  },
+  {
+    title: 'AI Workflow',
+    label: '현재 관심 분야',
+    text: '생성형 AI, 자동화, 영상 제작, 인터랙션 기반 제품 경험을 꾸준히 실험합니다.',
+  },
+];
+
+export const skillGroups = [
+  {
+    title: 'Development',
+    subtitle: '인터랙션을 실제 제품으로 구현',
+    items: [
+      { name: 'HTML', level: 'Advanced' },
+      { name: 'CSS', level: 'Advanced' },
+      { name: 'JavaScript', level: 'Advanced' },
+      { name: 'React', level: 'Advanced' },
+      { name: 'Node.js', level: 'Intermediate' },
+      { name: 'Supabase', level: 'Intermediate' },
+      { name: 'MySQL', level: 'Intermediate' },
+    ],
+  },
+  {
+    title: 'Design',
+    subtitle: '구조, 화면, 모션을 설계',
+    items: [
+      { name: 'Figma', level: 'Advanced' },
+      { name: 'Photoshop', level: 'Intermediate' },
+      { name: 'After Effects', level: 'Intermediate' },
+    ],
+  },
+  {
+    title: 'AI Tools',
+    subtitle: '기획과 제작 속도를 확장',
+    items: [
+      { name: 'ChatGPT', level: 'Advanced' },
+      { name: 'Midjourney', level: 'Advanced' },
+      { name: 'Runway', level: 'Intermediate' },
+      { name: 'Codex', level: 'Advanced' },
+    ],
+  },
+];
+
+export const projects = [
+  {
+    title: '막차 알림 앱',
+    summary: '실시간 대중교통 데이터를 기반으로 막차 리스크를 알려주는 모바일 서비스',
+    tech: ['React', 'Supabase', 'Maps API'],
+    period: '2025.02 - 2025.04',
+    role: 'Product Planning / Frontend',
+    image: 'https://picsum.photos/seed/last-train-premium/1200/820',
+    video: 'https://samplelib.com/lib/preview/mp4/sample-5s.mp4',
+    videoLabel: 'Mobile app motion showcase',
+    metric: '출발 판단 시간 42% 단축',
+    result: '핵심 플로우 클릭 수 31% 감소',
+    purpose: '늦은 귀가 상황에서 사용자가 마지막 이동 가능 시간을 놓치지 않도록 돕는 서비스입니다.',
+    problem: '일반 교통 앱은 경로 탐색에는 강하지만 막차까지 남은 행동 시간을 직관적으로 보여주지 못했습니다.',
+    solution: '목적지, 현재 위치, 환승 시간을 하나의 위험도 지표로 계산하고 알림 우선순위를 설계했습니다.',
+    features: ['막차 카운트다운', '위험도 배지', '즐겨찾기 경로', '푸시 알림 시나리오'],
+    design: '야간 사용성을 고려해 고대비 다크 UI와 큰 상태 표시를 중심으로 와이어프레임을 구성했습니다.',
+    review: '데이터 정확성과 알림 피로도 사이의 균형이 핵심이라는 점을 배웠습니다.',
+  },
+  {
+    title: 'AI 영상 생성 플랫폼',
+    summary: '프롬프트에서 숏폼 콘셉트, 이미지, 영상 컷 구성을 생성하는 제작 도구',
+    tech: ['React', 'Runway', 'OpenAI'],
+    period: '2025.05 - 2025.07',
+    role: 'Service Strategy / UX Prototype',
+    image: 'https://picsum.photos/seed/ai-video-premium/1200/820',
+    video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    videoLabel: 'AI service cinematic showcase',
+    metric: '초안 제작 시간 58% 단축',
+    result: '콘셉트 승인 속도 2.1배 향상',
+    purpose: '마케터와 크리에이터가 짧은 시간 안에 영상 아이디어를 구체화하도록 지원합니다.',
+    problem: '영상 제작 초반의 콘셉트 정리와 컷 구성 단계에서 시간이 반복적으로 소모되었습니다.',
+    solution: '프롬프트 템플릿, 무드보드, 컷 리스트 생성을 하나의 플로우로 연결했습니다.',
+    features: ['프롬프트 빌더', '컷별 이미지 생성', 'Runway 제작 가이드', '캠페인별 저장'],
+    design: '복잡한 AI 옵션을 단계형 패널로 나누고 결과물을 시각적으로 비교할 수 있게 설계했습니다.',
+    review: 'AI 결과물의 품질보다 좋은 입력 구조를 만드는 UX가 더 중요했습니다.',
+  },
+  {
+    title: 'React 영화 검색 앱',
+    summary: '검색, 필터, 즐겨찾기, 상세 정보를 제공하는 영화 탐색 인터페이스',
+    tech: ['React', 'TMDB API', 'CSS'],
+    period: '2024.10 - 2024.11',
+    role: 'Frontend Development',
+    image: 'https://picsum.photos/seed/movie-search-premium/1200/820',
+    video: 'https://samplelib.com/lib/preview/mp4/sample-10s.mp4',
+    videoLabel: 'UI interaction preview',
+    metric: '검색 성공률 24% 증가',
+    result: '상세 페이지 진입률 37% 증가',
+    purpose: '영화 정보를 빠르게 탐색하고 개인 취향에 맞게 저장하는 웹 앱입니다.',
+    problem: '검색 결과가 많을수록 사용자가 원하는 영화를 비교하기 어려웠습니다.',
+    solution: '장르, 평점, 개봉 연도 필터와 카드형 정보 구조를 도입했습니다.',
+    features: ['실시간 검색', '필터링', '상세 모달', '로컬 즐겨찾기'],
+    design: '콘텐츠 썸네일을 중심으로 시선 흐름을 만들고 정보 밀도를 조절했습니다.',
+    review: 'API 상태 관리와 빈 상태 UI의 중요성을 체감한 프로젝트였습니다.',
+  },
+  {
+    title: 'AI 포트폴리오 생성 서비스',
+    summary: '질문 답변을 기반으로 개인 포트폴리오 구조와 문구를 자동 생성하는 서비스',
+    tech: ['React', 'Node.js', 'ChatGPT'],
+    period: '2025.08 - 2025.10',
+    role: 'Planning / AI Flow / Frontend',
+    image: 'https://picsum.photos/seed/portfolio-ai-premium/1200/820',
+    video: 'https://samplelib.com/lib/preview/mp4/sample-15s.mp4',
+    videoLabel: 'Dashboard product walkthrough',
+    metric: '작성 시작률 46% 증가',
+    result: '초안 생성 시간 64% 단축',
+    purpose: '경험 정리에 어려움을 겪는 사용자가 빠르게 포트폴리오 초안을 만들도록 돕습니다.',
+    problem: '사용자는 자신의 경험을 어떤 구조와 언어로 보여줘야 하는지 막막해했습니다.',
+    solution: '답변형 온보딩과 AI 요약을 결합해 프로젝트별 강점을 추출했습니다.',
+    features: ['경험 질문지', 'AI 문구 생성', '섹션 추천', '템플릿 미리보기'],
+    design: '긴 입력 부담을 줄이기 위해 단계별 작성과 즉시 미리보기를 함께 배치했습니다.',
+    review: '자동 생성 결과에는 사용자의 목소리를 되살리는 편집 경험이 필요했습니다.',
+  },
+  {
+    title: '날씨 기반 추천 서비스',
+    summary: '날씨, 시간, 위치에 따라 활동과 콘텐츠를 추천하는 라이프스타일 서비스',
+    tech: ['React', 'Weather API', 'MySQL'],
+    period: '2024.12 - 2025.01',
+    role: 'UX Planning / UI / Frontend',
+    image: 'https://picsum.photos/seed/weather-life-premium/1200/820',
+    video: 'https://samplelib.com/lib/preview/mp4/sample-20s.mp4',
+    videoLabel: 'Futuristic motion preview',
+    metric: '추천 클릭률 29% 증가',
+    result: '반복 방문 의향 33% 증가',
+    purpose: '날씨 정보를 사용자의 다음 행동 추천으로 전환하는 경험을 만듭니다.',
+    problem: '날씨 앱은 정보를 보여주지만 사용자가 무엇을 하면 좋을지까지 제안하지 않았습니다.',
+    solution: '날씨 조건을 활동, 콘텐츠, 준비물 추천 규칙과 연결했습니다.',
+    features: ['상황별 추천', '준비물 체크', '지역 날씨', '개인화 태그'],
+    design: '정보 앱의 정확성과 추천 서비스의 감성을 균형 있게 섞었습니다.',
+    review: '추천의 설득력은 데이터보다 맥락 설명에서 나온다는 점을 확인했습니다.',
+  },
+];
+
+export const processSteps = [
+  { title: 'Research', label: '리서치', icon: 'RS', text: '시장, 사용자, 경쟁 제품을 빠르게 스캔합니다.' },
+  { title: 'UX Strategy', label: '전략 설계', icon: 'UX', text: '문제 정의와 핵심 행동 지표를 정리합니다.' },
+  { title: 'Wireframe', label: '구조화', icon: 'WF', text: '정보 구조와 주요 플로우를 낮은 비용으로 검증합니다.' },
+  { title: 'UI Design', label: '화면 설계', icon: 'UI', text: '브랜드 톤과 사용성을 반영한 인터페이스를 설계합니다.' },
+  { title: 'Development', label: '구현', icon: 'DV', text: 'React 기반으로 반응형 인터랙션을 구현합니다.' },
+  { title: 'Optimization', label: '최적화', icon: 'OP', text: '사용성, 성능, 전환 흐름을 개선합니다.' },
+];
+
+export const aiCapabilities = [
+  { tool: 'ChatGPT', title: 'Prompt Engineering', text: '질문 구조, 제약 조건, 출력 포맷을 설계해 기획 산출물의 품질을 높입니다.' },
+  { tool: 'Midjourney', title: 'Visual Direction', text: '무드보드, 캠페인 키비주얼, 제품 콘셉트 이미지를 빠르게 구체화합니다.' },
+  { tool: 'Runway', title: 'AI Video Workflow', text: '숏폼 컷 구성, 모션 레퍼런스, 영상 초안을 제작 과정에 연결합니다.' },
+  { tool: 'Codex', title: 'Code Acceleration', text: '반복 구현과 리팩터링을 자동화해 프로토타입 속도를 높입니다.' },
+  { tool: 'Automation', title: 'Content System', text: '콘텐츠 기획, 요약, 변형, 배포 전 점검을 워크플로우로 묶습니다.' },
+  { tool: 'Strategy', title: 'AI Service Planning', text: 'AI 기능을 사용자 가치와 서비스 지표로 번역하는 제품 구조를 설계합니다.' },
+];
+
+export const insights = [
+  {
+    title: 'React 컴포넌트를 제품 관점으로 설계하는 법',
+    category: 'React',
+    time: '6 min read',
+    summary: '재사용성보다 사용자 흐름을 먼저 보고 컴포넌트를 나누는 실전 기준',
+    image: 'https://picsum.photos/seed/react-insight-premium/720/480',
+  },
+  {
+    title: 'AI 시대의 포트폴리오 문법',
+    category: 'AI',
+    time: '8 min read',
+    summary: '결과물뿐 아니라 AI를 어떤 사고 도구로 쓰는지 보여주는 방식',
+    image: 'https://picsum.photos/seed/ai-insight-premium/720/480',
+  },
+  {
+    title: '좋은 마이크로카피가 전환율을 바꾸는 순간',
+    category: 'Marketing',
+    time: '5 min read',
+    summary: '버튼, 빈 상태, 오류 메시지에서 브랜드 신뢰를 만드는 방법',
+    image: 'https://picsum.photos/seed/marketing-copy-premium/720/480',
+  },
+];
+
+export const testimonials = [
+  {
+    name: 'Minseo Kim',
+    role: 'Product Lead, Mobility Startup',
+    avatar: 'https://picsum.photos/seed/profile-minseo/180/180',
+    text: '복잡한 아이디어를 사용자가 이해할 수 있는 화면과 플로우로 빠르게 바꿔냈습니다.',
+  },
+  {
+    name: 'Jihwan Lee',
+    role: 'Creative Director, Studio N',
+    avatar: 'https://picsum.photos/seed/profile-jihwan/180/180',
+    text: 'AI 툴을 단순히 쓰는 수준이 아니라 제작 프로세스 전체에 자연스럽게 녹였습니다.',
+  },
+  {
+    name: 'Hannah Park',
+    role: 'Frontend Partner, SaaS Team',
+    avatar: 'https://picsum.photos/seed/profile-hannah/180/180',
+    text: '디자인 의도와 개발 제약을 동시에 이해해서 협업 속도가 매우 좋았습니다.',
+  },
+  {
+    name: 'Doyun Choi',
+    role: 'Growth Marketer, D2C Brand',
+    avatar: 'https://picsum.photos/seed/profile-doyun/180/180',
+    text: '브랜드 메시지, 랜딩 페이지, 콘텐츠 자동화까지 하나의 캠페인 흐름으로 정리해줬습니다.',
+  },
+];
