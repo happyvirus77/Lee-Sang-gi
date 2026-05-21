@@ -1,4 +1,6 @@
 {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
   "name": "ai-digital-product-portfolio",
   "version": "1.0.0",
   "private": true,
@@ -12,11 +14,11 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "vite": "latest"
   },
   "devDependencies": {
-    "gh-pages": "latest"
+    "gh-pages": "^6.3.0"
   }
 }

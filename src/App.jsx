@@ -201,7 +201,15 @@ function HeroSection({ heroStats, onMove }) {
             <span />
             <em>Product OS</em>
           </div>
-          <img src="https://picsum.photos/seed/neon-product-premium/1100/780" alt="대표 프로젝트 목업" />
+          <video
+            src="/videos/intro.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="대표 프로젝트 목업"
+          />
           <div className="mockup-panel glass-card">
             <span>AI Product Sprint</span>
             <strong>UX Strategy / Frontend / Video / Growth</strong>

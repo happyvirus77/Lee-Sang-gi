@@ -627,7 +627,8 @@ main,
   animation: sheen 5.5s ease-in-out infinite;
 }
 
-.mockup-window img {
+.mockup-window video {
+  display: block;
   width: 100%;
   height: min(50vw, 500px);
   object-fit: cover;
@@ -2091,7 +2092,7 @@ p {
     font-size: 0.72rem;
   }
 
-  .mockup-window img {
+  .mockup-window video {
     height: 360px;
   }
 
@@ -2195,7 +2196,7 @@ p {
     border-radius: 22px;
   }
 
-  .mockup-window img {
+  .mockup-window video {
     height: 300px;
   }
 
