@@ -202,7 +202,7 @@ function HeroSection({ heroStats, onMove }) {
             <em>Product OS</em>
           </div>
           <video
-            src="/videos/intro.mp4"
+            src={`${import.meta.env.BASE_URL}videos/intro.mp4`}
             autoPlay
             muted
             loop
